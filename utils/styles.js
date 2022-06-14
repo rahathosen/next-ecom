@@ -15,11 +15,20 @@ const useStyles = makeStyles({
   grow:{
     flexGrow:1
   },
+
   main: {
     minHeight: "80vh",
+       //product details font 
   },
   footer: {
     textAlign: "center",
+    marginTop:'20px'
+  },
+  section:{
+    marginTop:25,
+    fontSize:'20px',
+    fontWeight:'bold',
+    marginBottom:10
   },
 });
 export default useStyles;

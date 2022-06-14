@@ -4,18 +4,19 @@ import NextLink from 'next/link';
 import { AppBar, Toolbar, Typography, Container, Link } from '@material-ui/core';
 import useStyles from '../utils/styles';
 
-export default function Layout({ children }) {
+export default function Layout({title,description, children }) {
 	const classes = useStyles();
 	return (
 		<div>
 			<Head>
-				<title>Next E-com</title>
+				<title>{title ? `${title} | Next E-com`: 'Next E-com'} </title>
+				{description && <meta name="description" content={description}></meta>}
 			</Head>
 			<AppBar position="static" className={classes.navbar}>
 				<Toolbar>
 					<NextLink href="/" passHref>
 						<Link>
-							<Typography className={classes.brand}>Next E-com </Typography>
+							<Typography className={classes.brand}>Next E-Com </Typography>
 						</Link>
 					</NextLink>
 					<div className={classes.grow} />
@@ -31,7 +32,7 @@ export default function Layout({ children }) {
 			</AppBar>
 			<Container className={classes.main}>{children}</Container>
 			<footer className={classes.footer}>
-				<Typography>@All right reserved. Next E-com 2022.</Typography>
+				<Typography>@All right reserved. Next E-Com 2022.</Typography>
 			</footer>
 		</div>
 	);
