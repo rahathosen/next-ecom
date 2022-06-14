@@ -1,6 +1,7 @@
 import { Card, CardActionArea, CardMedia, Grid,CardContent, Typography, CardActions, Button } from '@material-ui/core';
 import Layout from '../components/Layout';
 
+
 import data from '../utils/data';
 
 export default function Home() {
