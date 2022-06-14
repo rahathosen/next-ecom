@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 			</Head>
 			<AppBar position="static" className={classes.navbar}>
 				<Toolbar>
-					<Typography>Next E-com</Typography>
+					<Typography >Next E-com</Typography>
 				</Toolbar>
 			</AppBar>
 			<Container className={classes.main}>{children}
