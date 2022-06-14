@@ -1,6 +1,6 @@
     [x]  Added header links
          - cart & login
-    [ ] Create product details page
+    [x] Create product details page
     [ ] 
     [ ]  
     [ ] 
